@@ -20,7 +20,7 @@ skills:
       skill2: Scripting, Servers management and protocols, Automation
 
 interest:
-  title:
+  title: Interest
   interests:
     - name: Scripting languages
       name2: PHP, JS, Bash, Python
@@ -28,8 +28,30 @@ interest:
     - name: Hacking
       name2: Linux, Crawlers, Bots, Network
 
+cards:
+  - name: Projects
+    number: 60
+    symbol: +
+    description: Adapting and creating solutions for customers needs
+
+  - name: Web
+    number: 30
+    symbol: "%"
+    description: Applications development integrating third-party services and mobile client(s)
+
+  - name: Technical solutions
+    number: 30
+    symbol: "%"
+    description: Such as web services, scripts, configurations
+
+  - name: Leading
+    number: 20
+    symbol: "%"
+    description: Web projects and ensure the quality of delivery
+
+
 experience:
-  title:
+  title: Experience
   experiences:
     - role: Lead Developer @Geronimo
       time: Today - Apr. 2016

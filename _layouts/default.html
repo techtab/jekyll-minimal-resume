@@ -33,98 +33,67 @@
 				{% endfor %}
 				{% endif %}
 			</div>
+			{% if data.interest %}
 			<div class="sections">
 				<h2 class="section-title">Interests</h2>
+				{% for interests in data.interest.interests %}
 				<div class="list-card">
 					<div>
-						<h3>Scripting languages</h3>
-						<span>PHP, JS, Bash, Python</span>
+						<h3>{{ interests.name }}</h3>
+						<span>{{ interests.name2 }}</span>
 					</div>
 				</div>
-				<div class="list-card">
-					<div>
-						<h3>Hacking</h3>
-						<span>Linux, Crawlers, Bots, Network</span>
+				{% endfor %}
+				{% endif %}
+			</div>
+			<!-- Achievements -->
+			<div class="container cards">
+				{% for card in data.cards %}
+				<div class="card">
+					<div class="skill-level">
+						<span>{{ card.symbol }}</span>
+						<h2> {{ card.number}} </h2>
+					</div>
+					<div class="skill-meta">
+						<h3> {{ card.name }} </h3>
+						<span> {{ card.description }} </span>
 					</div>
 				</div>
-			</div>
-		</div>
-		<!-- Achievements -->
-		<div class="container cards">
-			<div class="card">
-				<div class="skill-level">
-					<span>+</span>
-					<h2>60</h2>
-				</div>
-				<div class="skill-meta">
-					<h3>Projects</h3>
-					<span>Adapting and creating solutions for customer's needs</span>
-				</div>
-			</div>
-			<div class="card">
-				<div class="skill-level">
-					<h2>50</h2>
-					<span>%</span>
-				</div>
-				<div class="skill-meta">
-					<h3>Web</h3>
-					<span>Applications development integrating third-party services and mobile client(s)</span>
-				</div>
-			</div>
-			<div class="card">
-				<div class="skill-level">
-					<h2>30</h2>
-					<span>%</span>
-				</div>
-				<div class="skill-meta">
-					<h3>Technical solutions</h3>
-					<span>Such as web services, scripts, configurations</span>
-				</div>
-			</div>
-			<div class="card">
-				<div class="skill-level">
-					<h2>20</h2>
-					<span>%</span>
-				</div>
-				<div class="skill-meta">
-					<h3>Leading</h3>
-					<span>Web projects and ensure the quality of delivery</span>
-				</div>
-			</div>
-		</div>
-		<!-- Timeeline -->
-		<div class="container">
-			<ol class="timeline">
-				{% if data.experience %}
-				{% for experiences in data.experience.experiences %}
-				<li>
-					<p class="line">{{ data.experience.title }}</p>
-					<span class="point"></span>
-					<p class="description">
-						{{ experiences.role }}
-					</p>
-					<span class="date">{{ experiences.time }}</span>
-				</li>
 				{% endfor %}
-				{% endif %}
-				{% if data.education %}
-				{% for school in data.education.school %}
-				<li>
-					<p class="line">{{ data.education.title }}</p>
-					<span class="point"></span>
-					<p class="description">
-						{{ school.name }}
-					</p>
-					<span class="date">{{ school.year }}</span>
-				</li>
-				{% endfor %}
-				{% endif %}
-			</ol>
-		</div>
-		<br><br>
-		<footer class="container">
-			<span style="font-size: 16px; margin-top: ">Coded by <a href="https://newtodesign.com/">New to design </a> Designed by <a href="https://dribbble.com/shots/4342703-Minimal-resume-freebie-for-junior-self-taught-people">Nicolas Meuzard</a></span>
-		</footer>
+			</div>
+			<!-- Timeeline -->
+			<div class="container">
+				<ol class="timeline">
+					{% if data.experience %}
+					<li>
+						<p class="line">{{ data.experience.title }}</p>
+						{% for experiences in data.experience.experiences %}
+						<span class="point"></span>
+						<p class="description">
+							{{ experiences.role }}
+						</p>
+						<span class="date">{{ experiences.time }}</span>
+						{% endfor %}
+					</li>
+					{% endif %}
+					{% if data.education %}
+					<li>
+						<p class="line">{{ data.education.title }}</p>
+						{% for school in data.education.school %}
+						<span class="point"></span>
+						<p class="description">
+							{{ school.name }}
+						</p>
+						<span class="date">{{ school.year }}</span>
+						{% endfor %}
+					</li>
+					{% endif %}
+				</ol>
+			</div>
+			<br><br>
+			<footer class="container">
+				<span style="font-size: 16px; margin-top: ">{{ site.copyright }}</a></span>
+			</footer>
 	</body>
 
 </html>
