@@ -1,0 +1,47 @@
+name: Abbie Bradley
+title: Developer
+email: abbie.bradley@gmail.com
+
+subtitle: Development and design of web applications for startups and large companies
+
+skills:
+  title: Skills
+  skillset:
+    - year: + 5 years
+      skill1: Object programming & frameworks
+      skill2: PHP, Symfony, Laravel, Silex, …
+
+    - year: + 3 years
+      skill1: Design integration
+      skill2: Style and tools, JS Frameworks
+
+    - year: + 6 years
+      skill1: Linux
+      skill2: Scripting, Servers management and protocols, Automation
+
+interest:
+  title:
+  interests:
+    - name: Scripting languages
+      name2: PHP, JS, Bash, Python
+
+    - name: Hacking
+      name2: Linux, Crawlers, Bots, Network
+
+experience:
+  title:
+  experiences:
+    - role: Lead Developer @Geronimo
+      time: Today - Apr. 2016
+
+    - role: Freelance
+      time: Apr. 2016 - Sep. 2015
+
+education:
+  title: Education
+  school:
+    - name: DUT Métiers du multimédia et de linternet
+      year: 2015 - 2013
+
+    - name: Art & Design studies
+      year: 2013 - 2008
