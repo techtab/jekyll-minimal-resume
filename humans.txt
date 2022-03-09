@@ -1,0 +1,20 @@
+/* TEAM */
+Job 39:19-25
+
+Sales and Account Manager: Vidhya Venkatesan
+Contact: vidhyav656@gmail.com
+Site: {{site.url}}/
+Location: Mumbai, India
+
+/* THANKS */
+
+Name: Vidhya Venkatesan vidhyav656.tech
+
+/* SITE */
+
+Last Updated: {{ site.time | date:"%Y/%m/%d" }}
+Language: English
+Doctype: HTML5
+Standards:  HTML5, CSS3, JavaScript
+Software: Jekyll, GitHub, Atom, Git, Imageoptim, JPEGMini
+Components: Bootstrap4, Modernizr, jQuery, Backstretch.js, Reveal

@@ -1,0 +1,28 @@
+title: "Lander - Rife Design - Apollo13 Premium WordPress Theme"
+email: "vidhyav656@gmail.com"
+description: >- # this means to ignore newlines until "baseurl:"
+ ‘Lander’ is one of many Landing Page demos included in the Rife Free WordPress Theme. The free version features AJAX loading portfolio items, video backgrounds, intro typewriter effect text, a sticky header that smooth scrolls to sections, testimonials, pricing table, team, a contact form and WooCommerce + Elementor support. One of the better free WordPress themes I’ve seen in the past couple years!
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://techtab.github.io/Lander/" # the base hostname & protocol for your site, e.g. http://example.com
+facebook_url: https://www.facebook.com/#/
+twitter_url: https://twitter.com/#
+linkedin_url: https://www.linkedin.com/company/#/
+# github_url:  https://github.com
+# pinterest_url: https://www.pinterest.com/
+# instagram_url: https://www.instagram.com/
+logo: "/assets/img/logos/.png"
+
+permalink: "/:title/"
+
+#set incremental to true in order to speed up build time. When using set post and pages to 'regenerate: true'
+
+incremental: true
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - .jekyll-cache
